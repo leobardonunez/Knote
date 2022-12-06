@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/etiqueta_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:text="Hi Leobardo"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/modal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_reload"
+        android:layout_margin="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:backgroundTint="@color/color_primary"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:drawableTint="@color/color_secondary"
+        android:text="New"
+        android:textColor="@color/color_secondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/style_btn1"
+        />
+    <Button
+        android:id="@+id/showbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modal_button"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:backgroundTint="@color/color_primary"
+        android:drawableTint="@color/color_secondary"
+        android:text="Mostrar"
+        android:textColor="@color/color_secondary"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20sp"
+            android:layout_margin="20sp"
+            android:layout_marginEnd="20sp"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

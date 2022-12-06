@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotaActivity">
+
+    <TextView
+        android:id="@+id/nombre_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/acnota_txtsubtareads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10sp"
+            android:paddingStart="40sp"
+            android:text="Subtareas"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/acnota_fechaActual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:gravity="right"
+            android:paddingStart="40sp"
+            android:paddingEnd="20sp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/acnota_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginStart="20sp"
+        android:text="Añadir una nueva subtarea"
+        android:focusableInTouchMode="true"
+        android:editable="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginStart="20sp"
+        android:text="Añadir una nueva subtarea"
+        android:focusableInTouchMode="true"
+        android:editable="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginStart="20sp"
+        android:text="Añadir una nueva subtarea"
+        android:focusableInTouchMode="true"
+        android:editable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notas"
+        android:padding="10sp"
+        android:paddingStart="40sp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/acnota_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"/>
+
+
+    <Button
+        android:id="@+id/acnota_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:text="save"
+        android:textStyle="bold"
+        android:background="@drawable/style_btn1"
+        android:textColor="@color/color_secondary"/>
+
+</LinearLayout>
